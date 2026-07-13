@@ -1,8 +1,8 @@
 import { createClient } from "@supabase/supabase-js";
 
 // Retrieve keys from build-time Vite environment variables or fallback directly to provided values
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "https://gkvkczdzlmoabbdvkshu.supabase.co";
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdrdmtjemR6bG1vYWJiZHZrcmh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyNjA1NjUsImV4cCI6MjA5ODgzNjU2NX0.BJg5BuzDnThFu7Z0HNjEjC_w1YAp5B5Rsy3_0x248R0";
+const SUPABASE_URL = (import.meta as any).env?.VITE_SUPABASE_URL || "https://gkvkczdzlmoabbdvkshu.supabase.co";
+const SUPABASE_ANON_KEY = (import.meta as any).env?.VITE_SUPABASE_ANON_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdrdmtjemR6bG1vYWJiZHZrcmh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyNjA1NjUsImV4cCI6MjA5ODgzNjU2NX0.BJg5BuzDnThFu7Z0HNjEjC_w1YAp5B5Rsy3_0x248R0";
 
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
