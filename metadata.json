@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Eleva",
+  "description": "Platform sewa alat gunung mahasiswa Malang Raya dengan asisten AI pintar CampaBot dan jaminan KTM bebas deposit.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
