@@ -2351,22 +2351,7 @@ dan bawa pulang kembali sampahmu ke kota.
                       </p>
                     </div>
 
-                    <div className="flex flex-wrap items-center gap-3">
-                      <button
-                        onClick={() => {
-                          showConfirm("Atur Ulang Stok", "Apakah Sam/Mbak yakin ingin mengatur ulang seluruh kondisi stok ke kondisi awal (Stok Penuh, Sedang Disewa = 0)?", () => {
-                            setGearInventory(INITIAL_GEAR_INVENTORY);
-                            setSelectedGear({});
-                            setCheckoutSuccess(false);
-                            showAlert("Stok Diatur Ulang", "Seluruh inventaris alat pendakian telah dikembalikan ke kondisi awal.");
-                          });
-                        }}
-                        className="flex items-center gap-1.5 py-2 px-4 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-300 rounded-xl text-xs font-semibold font-mono transition-all"
-                      >
-                        <RotateCcw className="w-4 h-4" />
-                        RESET SEMUA STOK (FULL)
-                      </button>
-                    </div>
+
                   </div>
 
                   {/* Quick Preset Packages */}
